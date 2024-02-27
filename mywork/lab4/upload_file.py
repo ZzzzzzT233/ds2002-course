@@ -37,7 +37,7 @@ expires_in = 604800
 
 response = s3.generate_presigned_url(
         "get_object",
-        Params={"Bucket": bucket_name, "Key": obj$
+        Params={"Bucket": bucket_name, "Key": object_name},
         ExpiresIn = expires_in
         )
 
